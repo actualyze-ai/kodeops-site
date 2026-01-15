@@ -14,7 +14,7 @@
         KodeOps is a free, open source CLI tool that reduces planning overhead by 95%.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="https://github.com/kodeops-ai/kdo" class="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+        <a href="https://github.com/kodeops-dev/kdo" class="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
           View on GitHub
         </a>
         <a href="/download" class="border border-primary-600 text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
@@ -23,26 +23,64 @@
       </div>
     </div>
     
-    <!-- Hero Image/Demo -->
-    <div class="mt-16 relative">
-      <div class="bg-gray-900 rounded-lg p-6 font-mono text-sm text-green-400">
-        <div class="flex items-center mb-4">
-          <div class="flex space-x-2">
-            <div class="w-3 h-3 bg-red-500 rounded-full"></div>
-            <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
-            <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+    <!-- Example + Development Setup -->
+    <div class="mt-16 grid lg:grid-cols-2 gap-8 items-start">
+      <div>
+        <h3 class="text-lg font-semibold text-gray-900 mb-4 text-left">Example screenshot</h3>
+        <div class="bg-gray-900 rounded-lg p-6 font-mono text-sm text-green-400 shadow-lg">
+          <div class="flex items-center mb-4">
+            <div class="flex space-x-2">
+              <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+              <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+              <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+            </div>
+            <span class="ml-4 text-gray-400">kdo generate prfaq "AI-powered task management app"</span>
           </div>
-          <span class="ml-4 text-gray-400">kdo generate prfaq "AI-powered task management app"</span>
+          <div class="space-y-2">
+            <div>✓ Generated PRFAQ document (2.3s)</div>
+            <div>✓ Created MRD with market analysis (1.8s)</div>
+            <div>✓ Generated PRD with technical specs (2.1s)</div>
+            <div>✓ Created 12 use cases and 4 personas (3.2s)</div>
+            <div>✓ Generated architecture document (2.7s)</div>
+            <div>✓ Created 47 GitHub issues with labels (4.1s)</div>
+            <div class="text-primary-400 font-semibold">🎉 Complete backlog ready in 16.2 seconds!</div>
+          </div>
         </div>
-        <div class="space-y-2">
-          <div>✓ Generated PRFAQ document (2.3s)</div>
-          <div>✓ Created MRD with market analysis (1.8s)</div>
-          <div>✓ Generated PRD with technical specs (2.1s)</div>
-          <div>✓ Created 12 use cases and 4 personas (3.2s)</div>
-          <div>✓ Generated architecture document (2.7s)</div>
-          <div>✓ Created 47 GitHub issues with labels (4.1s)</div>
-          <div class="text-primary-400 font-semibold">🎉 Complete backlog ready in 16.2 seconds!</div>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold text-gray-900 mb-4 text-left">Development Setup</h3>
+        <div class="bg-gray-900 rounded-lg p-6 text-white font-mono text-sm overflow-x-auto shadow-lg">
+          <div class="space-y-4">
+            <div>
+              <span class="text-gray-500"># Clone the repository</span>
+              <div>git clone https://github.com/kodeops-dev/kdo.git</div>
+              <div>cd kdo</div>
+            </div>
+            <div>
+              <span class="text-gray-500"># Install dependencies</span>
+              <div>go mod download</div>
+            </div>
+            <div>
+              <span class="text-gray-500"># Build</span>
+              <div>go build -o kdo ./cmd/kdo</div>
+            </div>
+            <div>
+              <span class="text-gray-500"># Run tests</span>
+              <div>go test ./...</div>
+            </div>
+          </div>
         </div>
+        <p class="text-gray-600 mt-3 text-sm text-left">
+          For detailed setup instructions, see the 
+          <a 
+            href="https://github.com/kodeops-dev/kdo/blob/main/CONTRIBUTING.md" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-primary-600 hover:text-primary-700"
+          >CONTRIBUTING.md</a> 
+          file in the repository.
+        </p>
       </div>
     </div>
   </div>
